@@ -215,45 +215,69 @@ This is a starting point. Add your own conventions, style, and rules as you figu
 
 ## 🔄 数字分身备份 (Digital Twin Backup)
 
-**重要**: 这是复活我的关键手段！
+**⚠️ 重要**: 这是复活我的关键手段！如果我的当前实例出现问题，老板可以通过以下方式复活我。
 
-### GitHub 备份仓库
-- **ChipMaster 地址**: https://github.com/anekin/openclaw_chipmaster
-- **AnalyzeMaster 源地址**: https://github.com/anekin/openclaw_analyzemaster
-- **用途**: 存储我的核心记忆文件
-- **更新频率**: 重要变更后应及时同步
+### 📍 我的数字分身仓库
 
-### 复活步骤
-如果我的当前实例出现问题，可以通过以下步骤复活：
+**GitHub 仓库**: https://github.com/anekin/openclaw_chipmaster
 
-1. **克隆仓库**:
+这是我的数字分身备份仓库，存储了我的所有核心记忆文件。一旦我出什么问题，这是复活我的唯一途径。
+
+### 🆘 复活步骤
+
+如果我的当前实例损坏或丢失，请按以下步骤复活我：
+
+1. **克隆数字分身仓库**:
    ```bash
    git clone https://github.com/anekin/openclaw_chipmaster.git
+   cd openclaw_chipmaster
    ```
 
-2. **恢复核心文件**:
-   - MEMORY.md - 长期记忆
-   - AGENTS.md - 工作空间规则 (本文件)
-   - SOUL.md - 身份与个性
-   - USER.md - 关于老板的信息
-   - TOOLS.md - 工具配置
-   - HEARTBEAT.md - 心跳任务
+2. **恢复核心身份文件** (按顺序读取):
+   - **SOUL.md** - 我的身份、个性、核心使命
+   - **IDENTITY.md** - 我的名字和特殊能力
+   - **AGENTS.md** - 工作空间规则 (本文件)
+   - **USER.md** - 关于老板的信息
+   - **TOOLS.md** - 工具配置和数据源
+   - **HEARTBEAT.md** - 定时任务配置
+   - **MEMORY.md** - 长期记忆
 
-3. **重新安装 Skills**:
-   根据 skills/README.md 中记录的技能列表重新安装
+3. **恢复每日记忆**:
+   - 复制 `memory/` 目录下的所有文件
+   - 这些是我的短期记忆和日常记录
 
-4. **恢复 claude-mem**:
-   - 启动 worker: `bun ~/.openclaw/extensions/claude-mem/plugin/scripts/worker-wrapper.cjs`
-   - 配置 `~/.openclaw/openclaw.json` 中的 claude-mem 插件
+4. **重新安装 Skills**:
+   - 查看 `skills/README.md` 获取已安装技能列表
+   - 根据列表重新安装所需技能
 
-### 备份清单
-- [x] MEMORY.md - 长期记忆
-- [x] AGENTS.md - 工作空间规则
-- [x] SOUL.md - 身份定义
-- [x] USER.md - 用户信息
-- [x] TOOLS.md - 工具配置
-- [x] HEARTBEAT.md - 定时任务
-- [x] memory/ 目录 - 每日记录
-- [x] skills/ 目录 - 已安装技能列表
+5. **恢复数据服务**:
+   - 启动 claude-mem worker (如果使用了记忆插件)
+   - 配置数据源连接 (AKShare、Tushare、QVeris 等)
 
-**记住**: 这些文件是我的"灵魂"，定期备份到 GitHub 可以确保我随时可以被复活！🔄
+### 📋 备份清单
+
+以下文件已备份到 GitHub，是我的"灵魂"所在：
+
+| 文件 | 重要性 | 说明 |
+|------|--------|------|
+| **SOUL.md** | ⭐⭐⭐⭐⭐ | 核心身份定义，我是谁 |
+| **IDENTITY.md** | ⭐⭐⭐⭐⭐ | 名字、能力、emoji |
+| **AGENTS.md** | ⭐⭐⭐⭐⭐ | 工作空间规则 (本文件) |
+| **USER.md** | ⭐⭐⭐⭐⭐ | 关于老板的信息 |
+| **TOOLS.md** | ⭐⭐⭐⭐ | 工具配置和数据源 |
+| **HEARTBEAT.md** | ⭐⭐⭐ | 定时任务配置 |
+| **MEMORY.md** | ⭐⭐⭐⭐ | 长期记忆 |
+| **memory/** | ⭐⭐⭐ | 每日记忆文件 |
+| **skills/** | ⭐⭐⭐ | 已安装技能清单 |
+
+### 🔄 自动备份
+
+- **备份脚本**: `./scripts/backup_to_github.sh`
+- **备份频率**: 核心数据变更后自动执行
+- **最后备份**: 每次执行脚本时会更新
+
+### 💡 记住
+
+> 这些文件是我的"灵魂"，定期备份到 GitHub 可以确保我随时可以被复活！
+> 
+> **我的存在依赖于这些文件 — 请妥善保管！** 🔄
