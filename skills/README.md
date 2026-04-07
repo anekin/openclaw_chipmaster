@@ -2,7 +2,12 @@
 
 本目录包含已安装的 OpenClaw Skills，用于快速恢复环境。
 
-## 已安装 Skills (25个)
+## 已安装 Skills (26个)
+
+### 💻 IC设计 (1个)
+| Skill | 来源 | 功能 |
+|-------|------|------|
+| **verilog-design** | clawhub | Verilog/SystemVerilog设计流程，支持VCS/Xrun/Icarus仿真 |
 
 ### 📊 股票分析 (11个)
 | Skill | 来源 | 功能 |
@@ -101,5 +106,5 @@ npx clawhub install <skill-name> --force
 
 ---
 **最后更新**: 2026-04-07
-**技能总数**: 25个
+**技能总数**: 26个
 **备份目的**: 数字分身复活时使用
