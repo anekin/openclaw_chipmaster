@@ -116,6 +116,33 @@ finclaw analyze 510050 --indicators rsi,macd,bollinger
 - **路径**: `/home/ubuntu/.openclaw/secrets/github_token.txt`
 - **账号**: anekin
 
+### 数字分身备份仓库
+- **仓库名**: `openclaw_chipmaster`
+- **地址**: https://github.com/anekin/openclaw_chipmaster
+- **描述**: ChipMaster 数字分身核心数据备份
+- **备份内容**:
+  - SOUL.md (核心身份)
+  - AGENTS.md (工作空间规范)
+  - IDENTITY.md (身份信息)
+  - USER.md (用户信息)
+  - TOOLS.md (工具配置)
+  - HEARTBEAT.md (定时任务)
+  - MEMORY.md (长期记忆)
+  - memory/ (每日记忆)
+  - scripts/ (核心脚本)
+
+### 自动备份脚本
+- **路径**: `/home/ubuntu/.openclaw/workspace-rtl_agent/scripts/backup_to_github.sh`
+- **使用方式**:
+  ```bash
+  # 手动执行备份
+  ./scripts/backup_to_github.sh
+  
+  # 添加到定时任务 (每天自动备份)
+  crontab -e
+  # 添加: 0 2 * * * /home/ubuntu/.openclaw/workspace-rtl_agent/scripts/backup_to_github.sh >> /tmp/chipmaster_backup.log 2>&1
+  ```
+
 ---
 
 Add whatever helps you do your job. This is your cheat sheet.
