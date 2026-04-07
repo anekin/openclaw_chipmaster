@@ -1,6 +1,6 @@
 # ChipMaster - OpenClaw Agent Digital Twin
 
-**CodingMaster + AnalyzeMaster** - IC设计与ETF投资分析双料AI助手
+**CodingMaster** - IC设计AI助手
 
 ---
 
@@ -11,12 +11,6 @@
 - Python开发
 - 代码架构设计
 - 自动化脚本
-
-### ETF投资分析 (AnalyzeMaster)
-- 1456只A股ETF实时监控
-- 12种经典交易策略回测
-- 技术指标：MA、MACD、RSI、KDJ、布林带
-- FinClaw AI量化引擎
 
 ---
 
@@ -38,23 +32,13 @@
 
 ## 🚀 快速开始
 
-### ETF分析
-```bash
-# ETF策略回测
-python3 scripts/etf_strategy_backtest.py
-
-# ETF实时监控
-python3 scripts/etf_monitor.py --all
-
-# FinClaw分析
-finclaw backtest --ticker 510050 --strategy golden-cross
 ```
 
 ---
 
 ## 📝 更新记录
 
-- **2026-04-07**: 初始创建，合并CodingMaster与AnalyzeMaster能力
+- **2026-04-07**: 初始创建，创建CodingMaster
 
 ---
 
